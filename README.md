@@ -1,2 +1,2 @@
 # portfolio-project
-information of all my projects and description of the details
+information on all my projects and detailed descriptions
