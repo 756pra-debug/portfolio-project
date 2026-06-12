@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>MyPortfolio</h1>
+
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div style="display:flex;align-items:center;gap:0.75rem">
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+                    <i id="themeIcon" class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h2>Hi, I'm <span>Prashant </span></h2>
+            <p>
+                I am a dedicated Full-Stack Developer with a strong passion for designing and developing modern,
+                scalable, and secure web applications. I specialize in creating seamless user experiences on the
+                frontend while ensuring efficient, reliable, and maintainable backend systems. My goal is to
+                transform business ideas into impactful digital products using clean code and best development
+                practices.
+            </p>
+            <div class="buttons">
+                <button class="btn primary" id="hireMeBtn">Hire Me</button>
+                <button class="btn secondary" id="downloadCvBtn">Download CV</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="image/prashant.jpeg" alt="Prashant Patil - Full Stack Developer" />
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="card">
+            <h3>About Me</h3>
+            <p>
+                I am a highly motivated Full-Stack Developer with a solid foundation in both frontend and backend
+                technologies. I enjoy working on real-world projects that challenge my problem-solving abilities
+                and help me grow as a developer. I strongly believe in writing clean, readable, and reusable code
+                that follows industry standards. I continuously explore new technologies and tools to stay updated
+                with modern development trends.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Professional Experience</h3>
+            <p>
+                I have hands-on experience in developing complete web applications from scratch, including
+                requirement analysis, UI design, backend development, database management, and deployment.
+                I have worked on RESTful APIs, authentication and authorization systems, CRUD operations,
+                and performance optimization. I am comfortable collaborating with teams, following agile workflows,
+                and delivering high-quality solutions within deadlines.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5 </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3 </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript / TypeScript </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-react"></i>
+                <span>React.js / Next.js </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node.js / Express.js </span>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <span>MongoDB / MySQL </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>Git & GitHub </span>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-docker"></i>
+                <span>Docker & Deployment </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Featured Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <h4>Personal Portfolio Website</h4>
+                <p>
+                    Designed and developed a modern, responsive portfolio website to showcase skills,
+                    projects, and professional information. The website includes smooth animations,
+                    dark/light mode support, and optimized performance to provide a polished user experience.
+                </p>
+            </div>
+            <div class="project">
+                <h4>Learning Management System (LMS)</h4>
+                <p>
+                    Built a full-stack Learning Management System with separate roles for students and teachers.
+                    Features include course creation, video uploads, progress tracking, certification generation,
+                    and secure authentication, providing a complete digital learning solution.
+                </p>
+            </div>
+            <div class="project">
+                <h4>E-Commerce Web Application</h4>
+                <p>
+                    Developed an end-to-end e-commerce platform featuring user authentication, product management,
+                    shopping cart functionality, order processing, admin dashboard, and payment integration,
+                    ensuring a smooth and secure online shopping experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Get In Touch</h3>
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your Full Name" required />
+            <input type="email" placeholder="Your Email Address" required />
+            <textarea rows="4" placeholder="Write your message here in detail..."></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Prashant. All Rights Reserved. Built with ❤️ using HTML, CSS & JavaScript.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
